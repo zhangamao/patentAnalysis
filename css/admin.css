@@ -1,0 +1,156 @@
+/*基本属性定义*/
+*{font-family:"宋体",arial;margin:0;padding:0;font-size:12px;color:#000;}
+body{background-color:#D6D3CE;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{border:0;margin:0;padding:0;}
+li{list-style-type:none;margin:0;padding:0;}
+table{margin:auto;}
+
+/* 链接颜色 */
+a:link,a:visited{color:#00F;text-decoration:underline;}
+a:hover{color:#F00;text-decoration:underline;}
+a:active{color:#00F;text-decoration:underline;}
+
+/* DisplayTag CSS区 */
+.displayTable{text-align:left;width:94%;letter-spacing:1px;}
+.displayTable table{background-color:#ffffff;width: 100%;border: 1px solid #848284;margin:6px 0;}
+.displayTable th,.displayTable td {
+	padding: 1px 2px 1px 2px !important;
+	vertical-align: middle;
+	height:20px;	
+}
+.displayTable thead tr {
+	background-color: #D6D3CE;
+	text-align: center;
+	vertical-align: middle;
+	height:20px;
+}
+.displayTable th.sorted {
+	background-color: #D6D3CE;
+}
+.displayTable th a,.displayTable th a:visited {
+	color: black;
+}
+.displayTable th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+.displayTable th.sorted a.displayTable ,th.sortable a {
+	background-position: right;
+	display: block;
+	width: 94%;
+}
+.displayTable th.sortable a {
+	background-image: url(../img/arrow_off.png);
+	background-repeat: no-repeat;	
+}
+.displayTable th.order1 a {
+	background-image: url(../img/arrow_down.png);
+	background-repeat: no-repeat;	
+}
+.displayTable th.order2 a {
+	background-image: url(../img/arrow_up.png);
+	background-repeat: no-repeat;	
+}
+.displayTable tr.odd {
+	background-color: #fff
+}
+.displayTable tr.tableRowEven,.displayTable tr.even {
+	background-color: #eee
+}
+.displayTable div.exportlinks {
+	background-color: #D6D3CE;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 94%;
+	font-family: "宋体", System;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;	
+}
+.displayTable span.export {
+	padding: 0 4px 1px 20px;
+	cursor: pointer;
+	font-family: "宋体", System;
+	font-size: 12px;
+	color: #000000;
+}
+.displayTable span.excel {
+	background-image: url(../img/ico_file_excel.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.csv {
+	background-image: url(../img/ico_file_csv.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.xml {
+	background-image: url(../img/ico_file_xml.png);
+	background-repeat: no-repeat;	
+}
+.displayTable span.pdf {
+	background-image: url(../img/ico_file_pdf.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.rtf {
+	background-image: url(../img/ico_file_rtf.png);
+	background-repeat: no-repeat;	
+}
+.displayTable span.pagebanner {
+	background-color: #D6D3CE;
+	margin-top: 10px;
+	font-family: "宋体", System;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;	
+}
+.displayTable span.pagelinks {
+	background-color: #D6D3CE;
+	border-top: none;
+	font-family: "宋体", System;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;	
+}
+
+/* 表单容器 */
+.formDiv{text-align:left;width:94%;letter-spacing:1px;}
+.formDiv table{background-color:#D6D3CE;}
+.formDiv tr{height:26px;}
+
+/* 大标题文本 */
+.titleText{font-family:"黑体",arial;font-size:18px;line-height:40px;color:#000;letter-spacing:1px;}
+
+/* 蓝色文本 */
+.blueText{color:blue;}
+
+/* 红色文本 */
+.redText{color:red;}
+
+/* 黑色加粗文本 */
+.blackbold{font-weight:600;}
+
+/*顶部标题栏目*/
+.admin_logo{float:left;width:60%;height:58px;text-align:left;}
+.admin_prompt{float:left;width:40%;height:43px;text-align:right;padding-top:15px;color:#009A00;}
+
+/*主形象Logo*/
+.main_logo{margin:80px auto;text-align:center;}
+
+/*树形菜单*/
+.dojoTree {font-family:宋体;font-size: 12px;	font-weight: normal;overflow: auto;}
+.dojoTreeNodeLabel {padding: 1px 2px;color: black;cursor: hand;}
+.dojoTreeNodeLabel img{vertical-align: middle;margin:auto 4px auto 0;}
+.dojoTreeNodeLabel:hover {text-decoration: underline;}
+.dojoTreeNodeLabelSelected {background-color: #D6D3CE;color: #FF0000;text-decoration: underline;}
+
+/*两个级联下拉列表横排*/
+.doubselect br{display:none}
+.doubselect select{width:135px;}
+
+/* 登录页面 */
+.labeltext{font-size: 14px;text-align:right;font-weight:bold;}
+.errorMessage{color:red;font-weight:none;line-height:20px;}
+.actionMessage{color:#009A00;font-weight:none;line-height:20px;}
+
+/*版权声明*/
+.copyright{height:30px;line-height:30px;text-align:center;color:#333;}
+
