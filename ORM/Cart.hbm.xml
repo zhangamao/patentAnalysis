@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.patent.ORM.Cart" table="cart" catalog="patent">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="money" type="java.lang.Double">
+            <column name="Money" precision="9" />
+        </property>
+        <property name="cartStatus" type="java.lang.Integer">
+            <column name="CartStatus" />
+        </property>
+
+         <!-- 映射cart到member的多对一单向关联 -->
+        <many-to-one name="member"
+        			 column="MemberID"
+        			 class="com.patent.ORM.Member"
+        			 lazy="false"
+        			 not-null="false"/>
+    </class>
+</hibernate-mapping>

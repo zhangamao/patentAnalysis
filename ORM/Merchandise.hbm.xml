@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.patent.ORM.Merchandise" table="merchandise" catalog="patent">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="merName" type="java.lang.String">
+            <column name="MerName" length="50" />
+        </property>
+        <property name="price" type="java.lang.Double">
+            <column name="Price" precision="8" />
+        </property>
+        <property name="sprice" type="java.lang.Double">
+            <column name="SPrice" precision="8" />
+        </property>
+        <property name="merModel" type="java.lang.String">
+            <column name="MerModel" length="40" />
+        </property>
+        <property name="picture" type="java.lang.String">
+            <column name="Picture" length="100" />
+        </property>
+        <property name="video" type="java.lang.String">
+            <column name="Video" length="100" />
+        </property>
+        <property name="merDesc" type="java.lang.String">
+            <column name="MerDesc" length="16277215" />
+        </property>
+        <property name="manufacturer" type="java.lang.String">
+            <column name="Manufacturer" length="50" />
+        </property>
+        <property name="leaveFactoryDate" type="java.util.Date">
+            <column name="LeaveFactoryDate" length="19" />
+        </property>
+        <property name="special" type="java.lang.Integer">
+            <column name="Special" />
+        </property>
+        <property name="htmlPath" type="java.lang.String">
+            <column name="HtmlPath" length="100" />
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="Status" />
+        </property>        
+        
+         <!-- 映射merchandise到category的多对一单向关联 -->
+        <many-to-one name="category"
+        			 column="CategoryID"
+        			 class="com.patent.ORM.Category"
+        			 lazy="false"
+        			 not-null="false"/>        
+    </class>
+</hibernate-mapping>
