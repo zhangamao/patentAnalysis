@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<!-- 对登录表单中的三个必填字段进行必填验证 -->
+<validators>
+	<field name="loginName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>${getText("login_validation_loginname")}</message>			
+		</field-validator>
+	</field>
+	<field name="privileges">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>${getText("admin_noprim")}</message>
+		</field-validator>
+    </field>
+</validators>

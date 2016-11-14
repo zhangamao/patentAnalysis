@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<!-- 对商品分类表单中的一个必填字段进行必填验证 -->
+<validators>
+	<!-- 商品分类名称为必填字符串 -->
+	<field name="cateName">
+		<field-validator type="requiredstring">
+			<!-- 商品分类名称进行首尾去空格处理 -->
+			<param name="trim">true</param>
+			<!-- 提示消息:商品分类名称不能为空! -->
+			<message>${getText("category_validation_name")}</message>			
+		</field-validator>
+	</field>
+</validators>

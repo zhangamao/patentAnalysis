@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+	"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<!-- 对会员级别表单中的三个必填字段进行必填验证 -->
+<validators>
+	<field name="levelName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>${getText("level_validation_name")}</message>			
+		</field-validator>
+	</field>
+	<field name="integral">
+		<field-validator type="required">
+			<message>${getText("level_validation_integral")}</message>
+		</field-validator>		
+	</field>	
+	<field name="favourable">
+		<field-validator type="required">
+			<message>${getText("level_validation_favourable")}</message>
+		</field-validator>		
+	</field>
+</validators>
